@@ -40,7 +40,7 @@ public class Customer {
   }
 
   static private class CustomerAsCustomer implements Function1<Customer, Customer> {
-    public String call(Customer customer) { return customer; }
+    public Customer call(Customer customer) { return customer; }
   }
 
   public static List<String> getEnabledCustomerAddresses() {
